@@ -3,6 +3,13 @@
 const ApiGateway = require("moleculer-web");
 const cors = require("cors");
 
+const corsOptions = {
+    origin: '*', // замените на ваш источник
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Если необходимо передавать куки, тогда использовать true
+    allowedHeaders: ['Content-Type', 'Authorization']
+};
+
 /**
  * @typedef {import('moleculer').ServiceSchema} ServiceSchema Moleculer's Service Schema
  * @typedef {import('moleculer').Context} Context Moleculer's Context
