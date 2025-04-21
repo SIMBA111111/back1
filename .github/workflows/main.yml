@@ -19,6 +19,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_SERVER_IP }} << 'EOF'
             export PATH=$PATH:/root/.nvm/versions/node/v20.19.0/bin  # Обновляем PATH
             echo $PATH
+            cd /
             cd back1/
             cd back1/
             pwd
