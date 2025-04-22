@@ -21,9 +21,12 @@ jobs:
             echo $PATH
             cd /
             cd back1/
-            cd back1/
             pwd
+            pm2 stop 3
             git pull
-            npm start
+            cd back1/
+            npm i
+            cd ..
+            pm2 start 3
             
             
