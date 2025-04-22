@@ -9,7 +9,7 @@ module.exports = {
             },
             async handler() {
                 console.log("acBack1 handler result");
-                return "acBack1 handler result"
+                return "acBack1 handler result updated"
             }
         },
         ac2Back1: {
